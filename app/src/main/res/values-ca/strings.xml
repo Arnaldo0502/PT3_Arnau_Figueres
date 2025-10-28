@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PT3_Arnau_Figueres</string>
+    <string name="onCreate_text">onCreate() s\'ha executat %d vegades</string>
+    <string name="onStart_text">onStart() s\'ha executat %d vegades</string>
+    <string name="onRestart_text">onRestart() s\'ha executat %d vegades</string>
+    <string name="onResume_text">onResume() s\'ha executat %d vegades</string>
+    <string name="onPause_text">onPause() s\'ha executat %d vegades</string>
+    <string name="onStop_text">onStop() s\'ha executat %d vegades</string>
+    <string name="onDestroy_text">onDestroy() s\'ha executat %d vegades</string>
+</resources>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PT3_Arnau_Figueres</string>
+    <string name="onCreate_text">onCreate() executed %d times</string>
+    <string name="onStart_text">onStart() executed %d times</string>
+    <string name="onRestart_text">onRestart() executed %d times</string>
+    <string name="onResume_text">onResume() executed %d times</string>
+    <string name="onPause_text">onPause() executed %d times</string>
+    <string name="onStop_text">onStop() executed %d times</string>
+    <string name="onDestroy_text">onDestroy() executed %d times</string>
 </resources>
