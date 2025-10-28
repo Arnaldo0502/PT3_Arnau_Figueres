@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,22 +10,109 @@
 
     <TextView
         android:id="@+id/tv_onCreate"
-        android:layout_width="60dp"
+        android:layout_width="250dp"
         android:layout_height="21dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="75dp"
         android:text="onCreate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_onCreate2"
-        android:layout_width="60dp"
+        android:id="@+id/tv_onStart"
+        android:layout_width="250dp"
         android:layout_height="21dp"
-        android:layout_marginTop="104dp"
-        android:text="onCreate"
+        android:layout_marginTop="40dp"
+        android:text="onStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_onCreate" />
 
+    <TextView
+        android:id="@+id/tv_onRestart"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="40dp"
+        android:text="onRestart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_onStart" />
+
+    <TextView
+        android:id="@+id/tv_onResume"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="40dp"
+        android:text="onResume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_onRestart" />
+
+    <TextView
+        android:id="@+id/tv_onPause"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="40dp"
+        android:text="onPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_onResume" />
+
+    <TextView
+        android:id="@+id/tv_onStop"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="40dp"
+        android:text="onStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_onPause" />
+
+    <TextView
+        android:id="@+id/tv_onDestroy"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="40dp"
+        android:text="onDestroy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_onStop" />
+
+    <TextView
+        android:id="@+id/textView_lenguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Language"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="218dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Català" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Castellano" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
